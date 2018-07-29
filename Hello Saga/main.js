@@ -4,9 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import {HelloSaga} from './sagas'
 import rootSaga from './sagas'
-
 import Counter from './Counter'
 import reducer from './reducers'
 
@@ -32,6 +30,5 @@ function render() {
     document.getElementById('root')
   )
 }
-
 render()
 store.subscribe(render)
